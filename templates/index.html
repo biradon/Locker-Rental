@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Locker Map</title>
+</head>
+<body>
+    <h1>Welcome to Rental Locker Map</h1>
+    <h2>Please select your building and floor</h2>
+    <ul>
+        <li>Building C - Floor 1</li>
+        <li>Building C - Floor 2</li>
+        <li><a href="{{ url_for('C3') }}">Building C - Floor 3</a></li>
+        <li>Building C - Floor 4</li>
+        <li>Building C - Floor 5</li>
+        <li>Building D - Floor 3</li>
+    </ul>
+    <form method="post" action="/fetchdata">
+        <input type="submit" value="Get New Data!">
+    </form>
+</body>
+</html>
