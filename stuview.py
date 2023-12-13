@@ -22,7 +22,7 @@ driver.get(URL)
 try:
     # Click applicant
     applicant_button = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, '/html/body/b/main/section[1]/div/div/div[1]/div/div/form[2]/input[3]'))
+        EC.element_to_be_clickable((By.XPATH, '/html/body/main/section[1]/div/div/div[1]/div/div/form[2]/input[3]'))
     )
     applicant_button.click()
 
@@ -92,9 +92,6 @@ try:
             # Append the new data
             with open(file_path, 'a') as file:
                 file.write((option['value'] + '\n'))
-    
-    time.sleep(3)
-
     #Click Sign out
     sign_out_button = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, '//*[@id="globalNav"]/div/ul/li[1]/a'))
