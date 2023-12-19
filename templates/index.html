@@ -7,6 +7,7 @@
 
     <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body class="container mt-5">
 
@@ -14,10 +15,10 @@
     <h2>Please select your building and floor</h2>
     <div class="list-group">
         <li class="list-group-item"><a href="{{ url_for('C1') }}">Building C - Floor 1</a></li>
-        <li class="list-group-item">Building C - Floor 2</li>
+        <li class="list-group-item"><a href="{{ url_for('C2') }}">Building C - Floor 2</a></li>
         <li class="list-group-item"><a href="{{ url_for('C3') }}">Building C - Floor 3</a></li>
-        <li class="list-group-item">Building C - Floor 4</li>
-        <li class="list-group-item">Building C - Floor 5</li>
+        <li class="list-group-item"><a href="{{ url_for('C4') }}">Building C - Floor 4</a></li>
+        <li class="list-group-item"><a href="{{ url_for('C5') }}">Building C - Floor 5</a></li>
         <li class="list-group-item">Building D - Floor 3</li>
     </div>
 
@@ -25,6 +26,7 @@
     <form method="post" action="/fetchdata" class="mt-3">
         <button type="submit" class="btn btn-primary">Get New Data!</button>
     </form>
+
 
     <br>
     <div class="footer mt-3">

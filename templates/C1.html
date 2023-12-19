@@ -11,14 +11,15 @@
      compareLockers('{{ lockers_C1 }}')
   </script>
   <title>Casa Loma Buidling C Floor 1</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
   <div id="title">
     <h2>Casa Loma Buidling C Floor 1</p>
   </div>
 
-  <img src="{{ url_for('static', filename='C1.png') }}">
-  <div class="accordion" id="accordionPanelsStayOpenExample">
+  <img class="shadow p-3 mb-5 bg-white rounded" src="{{ url_for('static', filename='C1.png') }}">
+  <div class="accordion shadow-lg p-3 mb-5 bg-white rounded" id="accordionPanelsStayOpenExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed " id="accordion-button-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
