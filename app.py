@@ -68,6 +68,17 @@ def C5():
         return redirect(url_for('index'))
     return render_template('C5.html', lockers_C5=lockers_C5)
 
+@app.route('/D3', methods=['GET', 'POST'])
+def D3():
+    # Read the file and store in the array, after that paste to the HTML
+    lockers_D3 = []
+    with open('buildings/D3.txt', 'r') as file:
+        for line in file:
+            lockers_D3.append(line.strip('\n'))
+
+    if request.method == 'POST':
+        return redirect(url_for('index'))
+    return render_template('D3.html', lockers_D3=lockers_D3)
 
 
 @app.route('/fetchdata', methods=['GET','POST'])

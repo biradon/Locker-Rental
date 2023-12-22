@@ -36,6 +36,11 @@ function compareLockers(lockerFromFlask) {
             let container23 = document.getElementsByClassName('accordion-body-23')[0];
             let container24 = document.getElementsByClassName('accordion-body-24')[0];
             let container25 = document.getElementsByClassName('accordion-body-25')[0];
+            // Building D Floor 3
+            let container26 = document.getElementsByClassName('accordion-body-26')[0];
+            let container27 = document.getElementsByClassName('accordion-body-27')[0];
+            let container28 = document.getElementsByClassName('accordion-body-28')[0];
+            let container29 = document.getElementsByClassName('accordion-body-29')[0];
                         
             for (let i=0; i < availableLockers.length; i++)
             {
@@ -185,6 +190,30 @@ function compareLockers(lockerFromFlask) {
                         container25.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
                     }
                 }
+                if(building == "D3")
+                {
+                    let location = availableLockers[i][2];
+                    if (location == "0")
+                    {
+                        // Append the content of the locker to the container
+                        container26.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                    }
+                    if (location == "1")
+                    {
+                        // Append the content of the locker to the container
+                        container27.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                    }
+                    if (location == "2" || location == "3")
+                    {
+                        // Append the content of the locker to the container
+                        container28.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                    }
+                    if (location == "4")
+                    {
+                        // Append the content of the locker to the container
+                        container29.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                    }
+                }
             }
             const containers = [
                 container1, container2, container3, container4,
@@ -193,7 +222,8 @@ function compareLockers(lockerFromFlask) {
                 container13, container14, container15, container16,
                 container17, container18, container19, container20,
                 container21, container22, container23, container24,
-                container25
+                container25, container26, container27, container28,
+                container29
             ];
             
             for (let container of containers) {
