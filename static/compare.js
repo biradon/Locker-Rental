@@ -30,6 +30,8 @@ function compareLockers(lockerFromFlask) {
             let container18 = document.getElementsByClassName('accordion-body-18')[0];
             let container19 = document.getElementsByClassName('accordion-body-19')[0];
             let container20 = document.getElementsByClassName('accordion-body-20')[0];
+            let container20a = document.getElementsByClassName('accordion-body-20a')[0];
+            let container20b = document.getElementsByClassName('accordion-body-20b')[0];
             // Building C Floor 5
             let container21 = document.getElementsByClassName('accordion-body-21')[0];
             let container22 = document.getElementsByClassName('accordion-body-22')[0];
@@ -140,25 +142,35 @@ function compareLockers(lockerFromFlask) {
                         // Append the content of the locker to the container
                         container16.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
                     }
-                    if (location == "5")
+                    if (location == "3")
                     {
                         // Append the content of the locker to the container
                         container17.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
                     }
-                    if (location == "6" || location == "7" )
+                    if (location == "5")
                     {
                         // Append the content of the locker to the container
                         container18.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
                     }
-                    if (location == "8")
+                    if (location == "6")
                     {
                         // Append the content of the locker to the container
                         container19.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
                     }
-                    if (location == "9")
+                    if (location == "7")
                     {
                         // Append the content of the locker to the container
                         container20.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                    }
+                    if (location == "8")
+                    {
+                        // Append the content of the locker to the container
+                        container20a.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                    }
+                    if (location == "9")
+                    {
+                        // Append the content of the locker to the container
+                        container20b.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
                     }
                 }
                 if(building == "C5")
@@ -221,9 +233,9 @@ function compareLockers(lockerFromFlask) {
                 container9, container10, container11, container12,
                 container13, container14, container15, container16,
                 container17, container18, container19, container20,
-                container21, container22, container23, container24,
-                container25, container26, container27, container28,
-                container29
+                container20a, container20b,container21, container22, 
+                container23, container24, container25, container26, 
+                container27, container28, container29
             ];
             
             for (let container of containers) {
