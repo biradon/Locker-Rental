@@ -1,0 +1,481 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<HTML lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
+<LINK REL="stylesheet" HREF="/css/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<link rel="stylesheet" type="text/css" href="/css/app-overrides.css">
+<link rel="stylesheet" type="text/css" href="/css/common-platform.css">
+<link rel="stylesheet" type="text/css" href="/css/common-controls.css">
+<LINK REL="stylesheet" type="text/css" href="/css/jquery/jquery.autocomplete.css">
+<LINK REL="stylesheet" type="text/css" href="/css/cascade.css">
+<!--[if IE 6]><link href="/css/ie6.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 7]><link href="/css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 8]><link href="/css/ie8.css" rel="stylesheet" type="text/css"><![endif]-->
+<LINK REL="stylesheet" type="text/css" href="/css/cascade-print.css" media="print">
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.includeMany-1.2.0.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.history.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery-ui-personalized-1.5.3.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery/json2xml.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery.jsonp-2.1.3.min.js"></script>
+<script type="text/javascript" src="/js/serviceProperties.js"></script>
+<script type="text/javascript" src="/js/common-controls-min.js"></script>
+<script type="text/javascript" src="/js/common-integrate-min.js"></script>
+<script type="text/javascript" src="/js/common-navigation-min.js"></script>
+<script type="text/javascript" src="/js/common-platform-min.js"></script>
+<script type="text/javascript" src="/js/cascade-utils-min.js"></script>
+<script type="text/javascript" src="/js/cascade-controls-min.js"></script>
+<script type="text/javascript" src="/js/udcxml-service-min.js"></script>
+<script type="text/javascript" src="/js/cascade-parser-min.js"></script>
+<script type="text/javascript" src="/js/cascade-ext-min.js"></script>
+<title>Locker</title>
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+var level_depth = "4";
+var userDetails = "Chau Minh Truong";
+var userID = "101411424";
+var LastWebAccess = "";
+var wcMessage = "Welcome, Chau Minh Truong, to STU-VIEW!";
+var sessionToken = "WTUyM0kwTTJaUjkxNTA1ODA3";
+var locale_val = "AMERICAN_AMERICA";
+var locale_lang = "en_US";
+var help_width= "450";
+var help_height = "500";
+//  End script hiding -->
+</SCRIPT>
+</head>
+<body>
+<div class="crumbs"><SPAN class="links"><a href="/PROD/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu">Home</a></SPAN><SPAN class="divider"> > </SPAN><SPAN class="lastValue">Locker</SPAN></div>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a href="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+<h1>STU-VIEW</h1></DIV><div class="headerlinksdiv">
+<SPAN class="pageheaderlinks2">
+<map name="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<a href="#skip_Module_Navigation_Links_H" onMouseover="window.status='Skip Module Navigation Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Module Navigation Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Module Navigation Links</a>
+<table  CLASS="plaintable" SUMMARY="This is main table for displaying Tab Items."
+                          WIDTH="100%" cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<TD CLASS="pldefault">
+<table  CLASS="plaintable" SUMMARY="This table displays Tab Items."
+                 cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td class="taboff" height=22>
+<a href="/PROD/wwskereq.p_ess?p_name=EmployeeSelfService">Employee Self Service</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/PROD/wwbklogn.p_view?p_name=PERSONAL-INFO" onMouseover="window.status='New Personal Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='New Personal Information'; return true" onBlur="window.status=''; return true" >Personal Information</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="tabon"  height=22>
+<a href="/PROD/twbkwbis.P_GenMenu?name=zmenu.P_AdmSumMnu" onMouseover="window.status='Admissions Application Summary'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Admissions Application Summary'; return true" onBlur="window.status=''; return true" >Admissions Application Summary</a>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/PROD/twbkwbis.P_GenMenu?name=wwsksinv.P_FinServ" onMouseover="window.status='Financial Services'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Services'; return true" onBlur="window.status=''; return true" >Financial Services</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="tabon"  height=22>
+<a href="/PROD/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" onMouseover="window.status='Registration Services'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Registration Services'; return true" onBlur="window.status=''; return true" >Registration Services</a>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/PROD/twbkwbis.P_GenMenu?name=bmenu.P_BsacMnu" onMouseover="window.status='Student Awards'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student Awards'; return true" onBlur="window.status=''; return true" >Student Awards</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="tabon"  height=22>
+<a href="/PROD/twbkwbis.P_GenMenu?name=zmenu.P_StuAcRcMnu" onMouseover="window.status='Academic Records'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Academic Records'; return true" onBlur="window.status=''; return true" >Academic Records</a>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/PROD/twbkwbis.P_GenMenu?name=bmenu.P_StuSuppMenu">Additional Student Services</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+</tr>
+</table>
+</TD>
+</tr>
+<tr>
+<TD class="bgtabon" width="100%" colSpan=2><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD></tr></table>
+</map>
+</SPAN>
+<a name="skip_Module_Navigation_Links_H"></a>
+</DIV>
+<table  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox." WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<div class="headerlinksdiv2">
+&nbsp;
+</div>
+</TD>
+<TD class="rightaligntext" CLASS="pldefault"><p class="rightaligntext" /p>
+<SPAN class="pageheaderlinks">
+<a href="/PROD/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</a>
+|
+<a href="/wtlhelp/twbhhelp.htm" accesskey="H" onClick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</a>
+|
+<a href="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+</span>
+</TD>
+</tr>
+</table>
+</DIV>
+<div class="pagetitlediv">
+<table  CLASS="plaintable" SUMMARY="This table displays title and static header displays." WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<h2>Welcome <b>Chau Minh Truong</b>.  </h2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext" /p>
+<div class="staticheaders">
+101411424 Chau Minh Truong<br>
+Winter 2024<br>
+Dec 09, 2023 07:32 am<br>
+</div>
+</TD>
+</tr>
+<tr>
+<TD class="bg3" width="100%" colSpan=3><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD>
+</tr>
+</table>
+<a name="main_content"></a>
+</DIV>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<table  CLASS="dataentrytable" summary="This table is for the selection of the term.">
+<tr>
+<td colspan="2" CLASS="dedefault">&nbsp;</td>
+</tr>
+<tr>
+<td CLASS="dedefault">&nbsp;</td>
+</tr>
+<tr>
+<TD CLASS="dedefault">
+<b>Please select from the list of available lockers: </b>
+</TD>
+</tr>
+<tr>
+<td colspan="1" CLASS="dedefault">&nbsp;</td>
+</tr>
+<tr>
+<form action="wwsklock.P_DisplayEmail" method="POST" name="selectLockerForm">
+<input type="hidden" name="p_pidm" value="1505807" />
+<input type="hidden" name="p_term" value="2" />
+<input type="hidden" name="p_term_count" value="1" />
+<input type="hidden" name="p_locker" value="1" />
+<TD CLASS="dedefault">
+<select name="p_locker_number" size="15">
+<OPTION VALUE="C1103" SELECTED>* C1103 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1107">* C1107 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1110">* C1110 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1115">* C1115 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1123">* C1123 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1124">* C1124 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1125">* C1125 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1128">* C1128 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1478">* C1478 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1480">* C1480 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1484">* C1484 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1485">* C1485 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1486">* C1486 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1488">* C1488 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1492">* C1492 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1494">* C1494 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1503">* C1503 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1764">* C1764 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1769">* C1769 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1771">* C1771 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1776">* C1776 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1800">* C1800 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1801">* C1801 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1802">* C1802 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1804">* C1804 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1806">* C1806 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1807">* C1807 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1808">* C1808 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1810">* C1810 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1811">* C1811 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1812">* C1812 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1817">* C1817 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1841">* C1841 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C1937">* C1937 Casa Loma C - 160 Kendal Ave. , Floor: 1 - Building Technologies </OPTION>
+<OPTION VALUE="C2041">* C2041 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2045">* C2045 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2062">* C2062 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2064">* C2064 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2065">* C2065 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2071">* C2071 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2075">* C2075 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2091">* C2091 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2110">* C2110 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2203">* C2203 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2205">* C2205 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2214">* C2214 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2216">* C2216 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2219">* C2219 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2284">* C2284 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2285">* C2285 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2300">* C2300 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2302">* C2302 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2303">* C2303 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2304">* C2304 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2306">* C2306 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2307">* C2307 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2309">* C2309 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2315">* C2315 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2332">* C2332 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2333">* C2333 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2334">* C2334 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2337">* C2337 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2338">* C2338 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2347">* C2347 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2350">* C2350 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2354">* C2354 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2356">* C2356 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2357">* C2357 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C2360">* C2360 Casa Loma C - 160 Kendal Ave. , Floor: 2 - Building Technologies </OPTION>
+<OPTION VALUE="C3294">* C3294 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3309">* C3309 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3524">* C3524 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3530">* C3530 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3574">* C3574 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3576">* C3576 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3578">* C3578 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3580">* C3580 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3586">* C3586 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3596">* C3596 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3609">* C3609 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3610">* C3610 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3616">* C3616 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3617">* C3617 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C3618">* C3618 Casa Loma C - 160 Kendal Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="C4090">* C4090 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4091">* C4091 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4092">* C4092 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4093">* C4093 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4094">* C4094 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4095">* C4095 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4096">* C4096 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4097">* C4097 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4098">* C4098 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4099">* C4099 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4100">* C4100 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4102">* C4102 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4116">* C4116 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4117">* C4117 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4118">* C4118 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4120">* C4120 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4121">* C4121 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4122">* C4122 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4123">* C4123 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4124">* C4124 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C4307">* C4307 Casa Loma C - 160 Kendal Ave. , Floor: 4 - Building Technologies </OPTION>
+<OPTION VALUE="C5103">* C5103 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5104">* C5104 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5105">* C5105 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5106">* C5106 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5108">* C5108 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5109">* C5109 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5110">* C5110 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5112">* C5112 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5113">* C5113 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5114">* C5114 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5117">* C5117 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5118">* C5118 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5119">* C5119 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5120">* C5120 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5121">* C5121 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5124">* C5124 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5125">* C5125 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5126">* C5126 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5127">* C5127 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5128">* C5128 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5129">* C5129 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5130">* C5130 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5131">* C5131 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5132">* C5132 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5134">* C5134 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5135">* C5135 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5136">* C5136 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5137">* C5137 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5138">* C5138 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5337">* C5337 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5340">* C5340 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5346">* C5346 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5351">* C5351 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5352">* C5352 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5353">* C5353 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5356">* C5356 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5357">* C5357 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5358">* C5358 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5359">* C5359 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5360">* C5360 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5362">* C5362 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5363">* C5363 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5364">* C5364 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5366">* C5366 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="C5368">* C5368 Casa Loma C - 160 Kendal Ave. , Floor: 5 - Building Technologies </OPTION>
+<OPTION VALUE="D3122">* D3122 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3124">* D3124 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3136">* D3136 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3141">* D3141 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3142">* D3142 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3144">* D3144 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3145">* D3145 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3146">* D3146 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3148">* D3148 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3149">* D3149 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3150">* D3150 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3152">* D3152 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3154">* D3154 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3155">* D3155 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3156">* D3156 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3160">* D3160 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3162">* D3162 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3457">* D3457 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3458">* D3458 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3459">* D3459 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3464">* D3464 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3465">* D3465 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3466">* D3466 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3468">* D3468 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3469">* D3469 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3470">* D3470 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3472">* D3472 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3473">* D3473 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3474">* D3474 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3475">* D3475 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3476">* D3476 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3477">* D3477 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3478">* D3478 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3479">* D3479 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3480">* D3480 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3481">* D3481 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3482">* D3482 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3483">* D3483 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3484">* D3484 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3485">* D3485 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3486">* D3486 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3487">* D3487 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3488">* D3488 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3489">* D3489 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3490">* D3490 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3491">* D3491 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3492">* D3492 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3493">* D3493 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3494">* D3494 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3495">* D3495 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3496">* D3496 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3497">* D3497 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3498">* D3498 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+<OPTION VALUE="D3499">* D3499 Casa Loma D - 1 Dartnell Ave. , Floor: 3 - Building Technologies </OPTION>
+</table>
+</select>
+<tr>
+<td colspan="2" CLASS="default">&nbsp;</td>
+</tr>
+<TD CLASS="default">
+<INPUT type="button" name="Back" value="Back" onClick="javascript:window.history.back();">
+&nbsp;&nbsp;
+<input name="p_continue"  type="hidden" value = "Next" />
+<INPUT type="button" value="Next"  onClick="javascript:document.forms.selectLockerForm.submit();">
+</TD>
+</form>
+</table>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page." WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><tr><TD class="bgtabon" width="100%" colSpan=2><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD></tr></table>
+<a href="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+</DIV>
+<div class="footerlinksdiv">
+<SPAN class="pagefooterlinks">
+<map name="Locker_Links_F" title="Locker Links">
+<p>
+<a href="#skip_Locker_Links_F" onMouseover="window.status='Skip Locker Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Locker Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Locker Links</a>
+<P>[ <a href="wwsklock.P_DisplayPolicy">Locker Policy</a>
+ | <a href="wwsklock.P_EmailSupport">Email Locker Service Staff for help</a>
+ ]
+</map>
+</SPAN>
+<a name="skip_Locker_Links_F"></a>
+</DIV>
+<div class="footerafterdiv">
+
+</DIV>
+<div class="globalafterdiv">
+
+</DIV>
+<div class="globalfooterdiv">
+
+</DIV>
+<div class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.6</SPAN>
+</DIV>
+<div class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+</body>
+</html>

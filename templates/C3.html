@@ -18,7 +18,21 @@
     <h2>Casa Loma Buidling C Floor 3</p>
   </div>
 
-  <img class="shadow p-3 mb-5 bg-white rounded" src="{{ url_for('static', filename='C3.png') }}">
+  <img class="shadow p-3 mb-2 bg-white rounded" src="{{ url_for('static', filename='C3.png') }}">
+
+  <div class="container-sm">
+    <div class="row d-flex">
+      <div class="col-md-5 d-flex align-items-center">
+        <img src="{{ url_for('static', filename='topLockers.png') }}" id="topLockers" class="img-fluid me-3" alt="Top Lockers">
+        <p class="fw-bold fs-4 mb-0">Top Lockers</p>
+      </div>
+      <div class="col-md-4 d-flex align-items-center">
+        <img src="{{ url_for('static', filename='bottomLockers.png') }}" id="bottomLockers" class="img-fluid me-3" alt="Bottom Lockers">
+        <p class="fw-bold fs-4 mt-4">Bottom Lockers</p>
+      </div>
+    </div>
+  </div>
+
   <div class="accordion shadow-lg p-3 mb-5 bg-white rounded" id="accordionPanelsStayOpenExample">
     <div class="accordion-item">
       <h2 class="accordion-header">

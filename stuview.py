@@ -21,8 +21,11 @@ def takeData():
 
     # Set up the Chrome browser in headless mode
     options = webdriver.ChromeOptions()
-    options.add_argument('--headless')  # example
-    # driver = webdriver.Remote("http://127.0.0.1:4444/wd/hub", options=options)
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    # driver = webdriver.Remote(options=options)
     driver = webdriver.Chrome(options=options)
 
     
@@ -53,7 +56,7 @@ def takeData():
 
         #Click continue
         sign_in_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '//*[@id="loginForm"]/div[5]/div[5]/div[2]/button'))
+            EC.element_to_be_clickable((By.XPATH, '/html/body/main/div/div[3]/div/form/div[5]/div[5]/div[2]/button'))
         )
         sign_in_button.click()
 
@@ -76,7 +79,6 @@ def takeData():
         continue_button.click()
 
         #================== Script to scrap data ==================
-        current_url = driver.current_url
         html_content = driver.page_source   #Get the page source after JavaScript has been executed
         soup = BeautifulSoup(html_content, "html.parser")
 
@@ -111,10 +113,11 @@ def takeData():
         sign_out_button.click()
         # Log a message
         logging.debug("This is a debug message")
-        logging.info("This is an info message")
-        logging.warning("This is a warning message")
-        logging.error("This is an error message")
-        logging.critical("This is a critical message")
+        # logging.info("This is an info message")
+        # logging.warning("This is a warning message")
+        # logging.error("This is an error message")
+        # logging.critical("This is a critical message")
     finally:
         # Close the browser window
         driver.quit()
+        # driver.get(URL)

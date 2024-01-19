@@ -47,23 +47,45 @@ function compareLockers(lockerFromFlask) {
             for (let i=0; i < availableLockers.length; i++)
             {
                 let building = availableLockers[i].substring(0,2);
+                let lockersTopOrBottom = parseInt(availableLockers[i][availableLockers[i].length-1]); 
                 if(building == "C3")
                 {
                     let location = availableLockers[i][2];
                     if (location == "0")
                     {
                         // Append the content of the locker to the container
-                        container1.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container1.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container1.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "3")
                     {
                         // Append the content of the locker to the container
-                        container2.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container2.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container2.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location != "1")
                     {
                         // Append the content of the locker to the container
-                        container3.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container3.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container3.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                 }
                 if(building == "C1")
@@ -72,27 +94,62 @@ function compareLockers(lockerFromFlask) {
                     if (location == "0" || location == "1" || location == "2" || location == "3" || location == "4" )
                     {
                         // Append the content of the locker to the container
-                        container4.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container4.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container4.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "5")
                     {
                         // Append the content of the locker to the container
-                        container5.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container5.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container5.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "6")
                     {
                         // Append the content of the locker to the container
-                        container6.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container6.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container6.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "7" || location == "8")
                     {
                         // Append the content of the locker to the container
-                        container7.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container7.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container7.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "9")
                     {
                         // Append the content of the locker to the container
-                        container8.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container8.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container8.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                 }
                 if(building == "C2")
@@ -101,27 +158,62 @@ function compareLockers(lockerFromFlask) {
                     if (location == "0")
                     {
                         // Append the content of the locker to the container
-                        container9.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container9.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container9.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "1")
                     {
                         // Append the content of the locker to the container
-                        container10.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container10.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container10.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "2")
                     {
                         // Append the content of the locker to the container
-                        container11.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container11.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container11.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "3" || location == "8")
                     {
                         // Append the content of the locker to the container
-                        container12.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container12.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container12.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "4")
                     {
                         // Append the content of the locker to the container
-                        container13.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container13.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container13.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                 }
                 if(building == "C4")
@@ -130,47 +222,111 @@ function compareLockers(lockerFromFlask) {
                     if (location == "0")
                     {
                         // Append the content of the locker to the container
-                        container14.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container14.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container14.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
+
                     }
                     if (location == "1")
                     {
                         // Append the content of the locker to the container
-                        container15.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container15.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container15.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "2")
                     {
                         // Append the content of the locker to the container
-                        container16.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container16.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container16.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "3")
                     {
                         // Append the content of the locker to the container
-                        container17.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container17.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container17.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "5")
                     {
                         // Append the content of the locker to the container
-                        container18.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container18.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container18.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "6")
                     {
                         // Append the content of the locker to the container
-                        container19.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container19.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container19.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "7")
                     {
                         // Append the content of the locker to the container
-                        container20.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container20.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container20.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "8")
                     {
                         // Append the content of the locker to the container
-                        container20a.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container20a.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container20a.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "9")
                     {
                         // Append the content of the locker to the container
-                        container20b.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container20b.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container20b.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                 }
                 if(building == "C5")
@@ -179,27 +335,62 @@ function compareLockers(lockerFromFlask) {
                     if (location == "0")
                     {
                         // Append the content of the locker to the container
-                        container21.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container21.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container21.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "1")
                     {
                         // Append the content of the locker to the container
-                        container22.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container22.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container22.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "2" || location == "3")
                     {
                         // Append the content of the locker to the container
-                        container23.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container23.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container23.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "4")
                     {
                         // Append the content of the locker to the container
-                        container24.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container24.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container24.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "5")
                     {
                         // Append the content of the locker to the container
-                        container25.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container25.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container25.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                 }
                 if(building == "D3")
@@ -208,22 +399,50 @@ function compareLockers(lockerFromFlask) {
                     if (location == "0")
                     {
                         // Append the content of the locker to the container
-                        container26.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container26.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container26.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "1")
                     {
                         // Append the content of the locker to the container
-                        container27.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container27.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container27.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "2" || location == "3")
                     {
                         // Append the content of the locker to the container
-                        container28.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container28.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container28.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                     if (location == "4")
                     {
                         // Append the content of the locker to the container
-                        container29.innerHTML += `<span style="font-size: 18px; font-weight: bold;">${availableLockers[i]}</span>, `;
+                        if (lockersTopOrBottom % 2 == 0)
+                        {
+                            container29.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #3FA796;">${availableLockers[i]}</span>, `;
+                        }
+                        else
+                        {
+                            container29.innerHTML += `<span style="font-size: 18px; font-weight: bold; color: #A10035">${availableLockers[i]}</span>, `;
+                        }
                     }
                 }
             }

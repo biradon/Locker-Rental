@@ -17,6 +17,19 @@ img {
     margin-right: auto;
 }
 
+#topLockers {
+    width: 55px;
+    height: 55.67px;
+  }
+
+  #bottomLockers {
+    width: 55px;
+    height: 55.67px;
+  }
+
+
+
+
 #accordionPanelsStayOpenExample {
     width: 30%;
     margin-top: 5px;
