@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static',    filename='css/styles.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='compare.js')}}"></script>
+  <script type="text/javascript">
+     compareLockers('{{ lockers_C4 }}')
+  </script>
+  <title>Casa Loma Buidling C Floor 4</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+  <div id="title">
+    <h2>Casa Loma Buidling C Floor 4</p>
+  </div>
+
+  <img class="shadow p-3 mb-2 bg-white rounded" src="{{ url_for('static', filename='C4.png') }}">
+
+  <div class="container-sm">
+    <div class="row d-flex">
+      <div class="col-md-5 d-flex align-items-center">
+        <img src="{{ url_for('static', filename='topLockers.png') }}" id="topLockers" class="img-fluid me-3" alt="Top Lockers">
+        <p class="fw-bold fs-4 mb-0">Top Lockers</p>
+      </div>
+      <div class="col-md-4 d-flex align-items-center">
+        <img src="{{ url_for('static', filename='bottomLockers.png') }}" id="bottomLockers" class="img-fluid me-3" alt="Bottom Lockers">
+        <p class="fw-bold fs-4 mt-4">Bottom Lockers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion shadow-lg p-3 mb-5 bg-white rounded" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed " id="accordion-button-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body-14">
+          <!-- Available Locker goes here -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed"  id="accordion-button-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body-15">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body-16">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+        <div class="accordion-body-17">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+        <div class="accordion-body-18">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-6" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+        <div class="accordion-body-19">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+        <div class="accordion-body-20">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-8" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+        <div class="accordion-body-20a">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-9" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+          Available Locker
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+        <div class="accordion-body-20b">
+          <!-- Available Locker goes here -->  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
+

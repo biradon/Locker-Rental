@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#building {
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 800px; /* Adjust according to your needs */
+    height: 600px;
+    border: 2px solid #333;
+}
+
+.room {
+    background-color: #87CEEB;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.stair {
+    background-color: #a6a6a6;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+#left-upper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#c301 {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+
+#c303 {
+    grid-column: 1;
+    grid-row: 3 / span 4;
+}
+
+#c302 {
+    grid-column: 2;
+    grid-row: 4;
+    margin-left: 15%;
+}
+
+#c337 {
+    grid-column: 4;
+    grid-row: 1 / span 4;
+}
+
+#wc1 {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+#wc2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#stair2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#right-upper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#c358{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#c330 {
+    margin-left: 10%;
+    grid-column: 1/ span 3;
+    grid-row: 2 / span 1;
+}
+
+
+
+#left-bottom {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+
+#c304 {
+    grid-column: 1;
+    grid-row: 2 / span 3;
+}
+
+#c305 {
+    grid-column: 1;
+    grid-row: 4 / span 5;
+}
+
+#c317 {
+    grid-column: 4 / span 6;
+    grid-row: 2 / span 5;
+}
+
+#right-bottom {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+} 
+
+#stair1 {
+    margin-left: 30%;
+    grid-row: 4;
+}
+
+
+
+
+.lockers-line-grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    border: 1px solid #000;
+    grid-column: 5;
+    grid-row: 1 / span 3;
+}   
+
+
+.top-lockers,
+.bottom-lockers {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr); /* Adjust the number of columns as needed */
+    border: 1px solid #000;
+}
+
+#locker1, #locker2, #locker3,
+#locker4, #locker5, #locker6,
+#locker7, #locker8, #locker9,
+#locker10, #locker11, #locker12,
+#locker13, #locker14, #locker15,
+#locker16, #locker17, #locker18 {
+    font-size: 10px;
+    padding: 1px;
+    border: 0.2px solid #000;
+}
+
+
+
+
