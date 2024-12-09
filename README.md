@@ -19,7 +19,9 @@ I designed a simplified map of the Casa Loma campus using **Figma**, highlightin
 Since George Brown College doesn’t provide an API for locker information, I used **Selenium** to automate the scraping of data from my own account. The data is categorized by floor and stored as static `.txt` files to keep the website lightweight and efficient.
 
 ### Hosting with Docker and AWS 🚀  
-I containerized my application with **Docker** and hosted it on an **AWS EC2** instance. While the free AWS plan is temporary, I am exploring alternative hosting options to keep the website accessible.
+I containerized my application with **Docker** and hosted it on an **AWS EC2** instance. ~~While the free AWS plan is temporary,I am exploring alternative hosting options to keep the website accessible~~
+
+I deployed my website via [Render](https://render.com/). Check the live demo [here](https://locker-rental.onrender.com/) 
 
 ---
 
