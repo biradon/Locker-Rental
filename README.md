@@ -10,9 +10,10 @@ The idea for this project came from my experience working at the Welcome Desk. O
 ## What I Did 🏃‍♂️
 
 ### Simplified School Map with Figma 🎨  
-I designed a simplified map of the Casa Loma campus using **Figma**, highlighting locker locations with a user-friendly interface. The goal was to ensure accessibility for a diverse audience.
+I designed a simplified map of the Casa Loma campus using **Figma**, highlighting locker locations with a user-friendly interface. The goal was to ensure accessibility for a diverse audience. Link of my design is [here](https://www.figma.com/design/idyyfLpoYhoiy2cPfLNHat/Locker-Rental?node-id=0-1&t=CbySCZkVJSgZv4OH-1)
 
-![Screenshot from Figma]('/web/static/C4-readme.png') 
+
+![Screenshot from Figma](https://github.com/biradon/Locker-Rental/blob/main/web/static/C4-readme.png) 
 
 ### Data Collection with Selenium 🛠  
 Since George Brown College doesn’t provide an API for locker information, I used **Selenium** to automate the scraping of data from my own account. The data is categorized by floor and stored as static `.txt` files to keep the website lightweight and efficient.
