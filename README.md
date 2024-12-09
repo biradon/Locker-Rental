@@ -1,9 +1,30 @@
-# Run docker in AWS EC2 Amazon Linux
-1. Start the docker daemon -> sudo systemctl start docker
-2. If have permission denied -> sudo chmod 666 /var/run/docker.sock
-3. To setup docker in the server -> https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-docker.html
-4. Install docker compose -> https://docs.docker.com/compose/install/linux/
-5. To transfer the file from local -> scp -r -i vs-flask-1.pem C:\Users\biradon\CS\'Rental Locker' ec2-user@34.227.151.58:/home/ec2-user
-6. docker compose build
-7. docker compose up -d
-8. To public the website run in instance -> sudo docker run -d -p 80:5000 rentallocker-web
+# Locker Rental 📦
+
+## What is Locker Rental? ❓
+Locker Rental is a website designed to help George Brown College students studying at the Casa Loma campus easily locate lockers available for rent.  
+
+The idea for this project came from my experience working at the Welcome Desk. One of the most frequently asked questions was: *"Where is the locker I want to rent located?"* Unfortunately, there wasn’t a clear answer. This inspired me to create Locker Rental—not just for my convenience but also to support my student services department in making life easier for everyone.
+
+---
+
+## What I Did 🏃‍♂️
+
+### Simplified School Map with Figma 🎨  
+I designed a simplified map of the Casa Loma campus using **Figma**, highlighting locker locations with a user-friendly interface. The goal was to ensure accessibility for a diverse audience.
+
+![Screenshot from Figma]('/web/static/C4-readme.png') 
+
+### Data Collection with Selenium 🛠  
+Since George Brown College doesn’t provide an API for locker information, I used **Selenium** to automate the scraping of data from my own account. The data is categorized by floor and stored as static `.txt` files to keep the website lightweight and efficient.
+
+### Hosting with Docker and AWS 🚀  
+I containerized my application with **Docker** and hosted it on an **AWS EC2** instance. While the free AWS plan is temporary, I am exploring alternative hosting options to keep the website accessible.
+
+---
+
+## Notice ❗  
+Last summer, George Brown College’s StuView system underwent a significant update, which affected the automation scripts I had created. While the automation process needs updating, I’m proud of the solution I built and the impact it had during its time.
+
+If you’d like to explore the project, feel free to clone the repository and run:
+
+`docker-compose up --build -d`
